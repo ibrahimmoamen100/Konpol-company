@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <h1>We</h1>
+      <h1>The Site is Under Creating</h1>
     </main>
   );
 }

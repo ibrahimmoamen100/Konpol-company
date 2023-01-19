@@ -1,3 +1,3 @@
 export default function navbar() {
-  return <h1>hello world from navbar</h1>;
+  return <h1>WELCOME TO OUR KONPOL COMPANY </h1>;
 }
