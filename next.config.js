@@ -2,7 +2,10 @@
 const nextConfig = {
   experimental: {
     appDir: true,
+    // images: {
+    //   allowFutureImage: true,
+    // },
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
