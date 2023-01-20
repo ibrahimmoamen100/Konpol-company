@@ -10,8 +10,8 @@ export default function Home(props) {
   console.log(props);
   return (
     <main className={styles.main}>
-      {/* <Image src={logo} alt="logo company" className={styles.logo_image} /> */}
       <div className={styles.entire_container}>
+        <Image src={logo} alt="logo company" className={styles.logo_image} />
         <h1 className={styles.header}>WELCOME TO KONPOL COMPANY</h1>
         <h2 className={styles.header2}>WEBSITE IS UNDER CREATING</h2>
         <Countdown />

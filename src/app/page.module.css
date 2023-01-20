@@ -27,12 +27,12 @@ font-family: 'Yeseva One', cursive;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 2em;
 }
 
 @media (max-width: 770px) {
   .entire_container {
-    gap: 3em;
+    gap: 1em;
   }
 }
 
@@ -52,9 +52,9 @@ font-family: 'Yeseva One', cursive;
 .seconds_section {
   display: flex;
   flex-direction: column;
-  border: 1px dashed rgb(237, 212, 22);
+  border: 1px dashed #df9b0b;
   flex: 1;
-  background-color: #00154ec6;
+  background-color: #df9b0b;
 
   /* justify-content: center;
   align-items: center; */
@@ -69,6 +69,7 @@ font-family: 'Yeseva One', cursive;
   width: 100%;
   text-align: center;
   font-size: 3em;
+  background-color: #00154ed9;
 }
 
 @media (max-width: 770px) {
@@ -107,23 +108,26 @@ font-family: 'Yeseva One', cursive;
   text-align: center;
   background-color: #00154ed9;
   padding: 1em;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   font-family: "Orbitron", sans-serif;
+}
+
+.header2 {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Righteous", cursive;
+  background-color: #df9b0b;
+  padding: 1em;
 }
 
 .logo_image {
   height: 250px;
+  align-self: center;
+  justify-self: flex-end;
   width: auto;
-  position: fixed;
-  left: 10px;
-  top: 10px;
+
   padding: 2em;
-}
-.header2 {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-family: "Righteous", cursive;
 }
 .hours_section {
 }
