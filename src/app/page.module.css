@@ -27,19 +27,19 @@ font-family: 'Yeseva One', cursive;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 0.8em;
 }
 
 @media (max-width: 770px) {
   .entire_container {
-    gap: 1em;
+    gap: 0em;
   }
 }
 
 .countdown_container {
   /* background-color: #00154ec6; */
   display: flex;
-  gap: 1em;
+  /* gap: 0.2em; */
 }
 @media (max-width: 770px) {
   .countdown_container {
@@ -54,7 +54,7 @@ font-family: 'Yeseva One', cursive;
   flex-direction: column;
   border: 1px dashed #df9b0b;
   flex: 1;
-  background-color: #df9b0b;
+  /* background-color: #df9b0b; */
 
   /* justify-content: center;
   align-items: center; */
@@ -91,6 +91,7 @@ font-family: 'Yeseva One', cursive;
   text-align: center;
   color: white;
   font-family: "Righteous", cursive;
+  background-color: #df9b0b;
 }
 
 @media (max-width: 770px) {
@@ -127,7 +128,66 @@ font-family: 'Yeseva One', cursive;
   justify-self: flex-end;
   width: auto;
 
-  padding: 2em;
+  padding: 1em;
+}
+
+.p_catalog {
+  background-color: #00154ed9;
+  color: white;
+  padding: 1em;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.download_catalog_btn {
+  border: none;
+  align-self: center;
+  padding: 1em;
+  cursor: pointer;
+  background-color: #d88b0b;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.download_catalog_btn > a {
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+.download_catalog_btn::after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  background-color: #00154e;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+.download_catalog_btn::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  right: 100%;
+  top: 0;
+  background-color: #00154e;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+.download_catalog_btn:hover > a {
+  color: #fff;
+}
+.download_catalog_btn:hover.download_catalog_btn::after {
+  left: 50%;
+}
+.download_catalog_btn:hover.download_catalog_btn::before {
+  right: 50%;
 }
 .hours_section {
 }
