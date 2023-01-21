@@ -13,7 +13,7 @@ export default function Home(props) {
       <div className={styles.entire_container}>
         <Image src={logo} alt="logo company" className={styles.logo_image} />
         <h1 className={styles.header}>WELCOME TO KONPOL COMPANY</h1>
-        <h2 className={styles.header2}>WEBSITE IS UNDER CREATING</h2>
+        <h2 className={styles.header2}>WEBSITE IS UNDER Design</h2>
         <Countdown />
         <p className={styles.p_catalog}>
           Check More About Us by Download our Catalog in the button Down below
