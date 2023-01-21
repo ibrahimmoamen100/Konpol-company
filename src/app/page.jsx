@@ -19,7 +19,11 @@ export default function Home(props) {
           Check More About Us by Download our Catalog in the button Down below
         </p>
         <button className={styles.download_catalog_btn}>
-          <a href="https://drive.google.com/file/d/1JQwy0tlURPNYMH7M5O2WTR1k0rdiUE0X/view?usp=sharing">
+          <a
+            href="https://drive.google.com/file/d/1JQwy0tlURPNYMH7M5O2WTR1k0rdiUE0X/view?usp=sharing"
+            rel="noreferrer"
+            target="_blank"
+          >
             Download Catalog
           </a>
         </button>
