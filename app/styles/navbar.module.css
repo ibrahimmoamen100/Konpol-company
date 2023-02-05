@@ -1,0 +1,39 @@
+.entire_navbar {
+  background-color: #ddd;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar_container {
+  max-width: 1200px;
+  /* background-color: red; */
+  margin: auto;
+}
+
+.nav_link_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.logo {
+}
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  list-style: none;
+  /* background-color: blue; */
+  height: 100%;
+  flex: 1;
+}
+
+.nav_links > li a {
+  text-decoration: none;
+  color: black;
+}

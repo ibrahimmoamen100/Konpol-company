@@ -12,9 +12,9 @@ font-family: 'Yeseva One', cursive;
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem; */
   min-height: 100vh;
   background-image: url("/image/backround-image.jpeg");
   background-repeat: no-repeat;
@@ -28,6 +28,7 @@ font-family: 'Yeseva One', cursive;
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+  padding: 1em;
 }
 
 @media (max-width: 770px) {
@@ -123,12 +124,11 @@ font-family: 'Yeseva One', cursive;
 }
 
 .logo_image {
-  height: 250px;
-  align-self: center;
-  justify-self: flex-end;
+  height: 150px;
+  justify-self: stretch;
   width: auto;
-
   padding: 1em;
+  object-fit: contain;
 }
 
 .p_catalog {

@@ -1,5 +1,5 @@
-import styles from "../page.module.css";
 import Script from "next/script";
+import styles from "../styles/page.module.css";
 export default function countdown() {
   return (
     <div className={styles.countdown_container}>
