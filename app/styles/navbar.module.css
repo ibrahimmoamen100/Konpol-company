@@ -1,6 +1,6 @@
 .entire_navbar {
-  background-color: #ddd;
-  padding: 0;
+  background-color: #eee;
+  padding: 0em;
   margin: 0;
 }
 
@@ -32,8 +32,12 @@
   height: 100%;
   flex: 1;
 }
+.image_logo {
+  width: 100px;
+}
 
-.nav_links > li a {
+.nav_links > li > a {
   text-decoration: none;
   color: black;
+  padding: 1em;
 }

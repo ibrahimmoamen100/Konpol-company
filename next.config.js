@@ -10,9 +10,9 @@ const nextConfig = {
 
 module.exports = nextConfig;
 
-const withCSS = require("@zeit/next-css");
-module.exports = withCSS({
-  cssModules: true,
+// const withCSS = require("@zeit/next-css");
+// module.exports = withCSS({
+//   cssModules: true,
 
-  /* my next config */
-});
+//   /* my next config */
+// });
