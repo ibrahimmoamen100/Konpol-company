@@ -12,7 +12,7 @@ export default function Home() {
       <Topnavbar />
       <Navbar />
       <Slider />
-      <div className="container">hello from home</div>
+      <div className="container">hello from </div>
     </div>
   );
 }

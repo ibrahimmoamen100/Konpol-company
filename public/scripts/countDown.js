@@ -1,4 +1,4 @@
-let countDownDate = new Date("FEB 15, 2023 23:59:59").getTime();
+let countDownDate = new Date("Mar 20, 2023 23:59:59").getTime();
 
 let counter = setInterval(() => {
   // get date now
