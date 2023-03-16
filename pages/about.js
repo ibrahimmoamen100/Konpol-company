@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../app/componnets/navbar";
+import Navbar from "../app/componnets/Navbar";
 import Topnavbar from "app/componnets/topnavbar";
 import "../app/styles/globals.css";
 import Slider from "app/componnets/slider";

@@ -1,6 +1,8 @@
+"use client";
 import "./styles/globals.css";
-import Navbar from "./componnets/navbar";
+import Navbar from "./componnets/Navbar";
 import Topnavbar from "./componnets/topnavbar";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        navColor: "rgba(255, 255, 255, 0.5)",
+        main: "#00154e",
+      },
+    },
   },
   plugins: [],
 };

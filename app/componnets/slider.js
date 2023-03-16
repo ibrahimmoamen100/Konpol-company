@@ -81,9 +81,12 @@ function slider(props) {
             className="block object-cover h-full w-screen pointer-events-none "
             alt="hello  "
           />
-          <h1 className="bg-slate-900 p-2 uppercase absolute text-7xl text-cyan-300 top-2/3 right-2/3 ">
-            hello world
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Bulding for today with an eye on tomorrow
           </h1>
+          <button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Read More
+          </button>
         </div>
         <div className="w-{100} h-{100} bg-red-300 flex object-cover pointer-events-none">
           <Image
