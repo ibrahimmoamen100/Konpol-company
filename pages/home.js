@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Cards from "../componnets/Card";
-import Navbar from "../componnets/Navbar";
-import Pricing from "../componnets/Pricing";
-import Slider from "../componnets/Slider";
-import Stats from "../componnets/Stats";
-import Topnavbar from "../componnets/topnavbar";
-import "../styles/globals.css";
+import Navbar from "../app/componnets/Navbar";
+import Topnavbar from "app/componnets/topnavbar";
+import "../app/styles/globals.css";
+import Slider from "app/componnets/slider";
+import Pricing from "app/componnets/Pricing";
+import Stats from "app/componnets/Stats";
+import Cards from "app/componnets/Card";
 export default function Home() {
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Home() {
       <Pricing />
       <Stats />
       <Cards />
-      <div className="container">hello from Home Page</div>
+      <div className="container">hello from </div>
     </div>
   );
 }

@@ -1,8 +1,8 @@
-import Slider from "app/componnets/slider";
-import Topnavbar from "app/componnets/topnavbar";
 import Head from "next/head";
 import Navbar from "../app/componnets/Navbar";
+import Topnavbar from "app/componnets/topnavbar";
 import "../app/styles/globals.css";
+import Slider from "app/componnets/slider";
 export default function about() {
   return (
     <div>

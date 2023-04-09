@@ -1,75 +1,124 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+import bg1 from "../../public/image/slider 4.jpeg";
+import bg2 from "../../public/image/slider 4.jpeg";
 import bg3 from "../../public/image/slider 2.jpeg";
-import {
-  default as bg1,
-  default as bg2,
-  default as bg4,
-} from "../../public/image/slider 4.jpeg";
+import bg4 from "../../public/image/slider 4.jpeg";
 
 import Image from "next/image";
-import React, { useState } from "react";
-import Draggable from "react-draggable";
-
-const carouselData = [
-  {
-    id: 1,
-    image: "path/to/image1.jpg",
-    title: "Building 1",
-  },
-  {
-    id: 2,
-    image: "path/to/image2.jpg",
-    title: "Building 2",
-  },
-  {
-    id: 3,
-    image: "path/to/image3.jpg",
-    title: "Building 3",
-  },
-  // Add more carousel items here
-];
-
-const slider = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleDrag = (e, ui) => {
-    if (ui.x > 50 && activeIndex > 0) {
-      setActiveIndex(activeIndex - 1);
-    } else if (ui.x < -50 && activeIndex < carouselData.length - 1) {
-      setActiveIndex(activeIndex + 1);
-    }
+function slider(props) {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
   };
-
-  const handleDragStop = () => {
-    setActiveIndex(activeIndex);
-  };
-
   return (
-    <div>
-      <h1>Building Structure Company</h1>
-      <div className="carousel">
-        {carouselData.map((item, index) => (
-          <Draggable
-            key={item.id}
-            axis="x"
-            onDrag={handleDrag}
-            onStop={handleDragStop}
-            position={index === activeIndex ? { x: 0, y: 0 } : null}
-          >
-            <div
-              className={`carousel-slide ${
-                index === activeIndex ? "active" : ""
-              }`}
-            >
-              <img src={item.image} alt={item.title} />
-              <h2>{item.title}</h2>
-            </div>
-          </Draggable>
-        ))}
-      </div>
+    <div className="bg-slate-500 h-2/6">
+      <Carousel
+        className="m-auto "
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={2000}
+        centerMode={false}
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 1,
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 1,
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 1,
+          },
+        }}
+        rewind={false}
+        rewindWithAnimation={true}
+        rtl={false}
+        shouldResetAutoplay
+        showDots
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
+        <div className="w-screen bg-red-300 flex-row object-cover ">
+          <Image
+            src={bg1}
+            className="block object-cover h-full w-screen pointer-events-none "
+            alt="hello  "
+          />
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Bulding for today with an eye on tomorrow
+          </h1>
+          <button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Read More
+          </button>
+        </div>
+        <div className="w-{100} h-{100} bg-red-300 flex object-cover pointer-events-none">
+          <Image
+            src={bg4}
+            className="block object-cover max-w-full w-full h-full"
+            alt="hello  "
+          />
+        </div>
+        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
+          <Image
+            src={bg3}
+            className="block object-cover max-w-full w-full h-full"
+            alt="hello  "
+          />
+        </div>
+        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
+          <Image
+            src={bg2}
+            className="block object-cover max-w-full w-full h-full"
+            alt="hello  "
+          />
+        </div>
+        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
+          <Image
+            src={bg1}
+            className="block object-cover max-w-full w-full h-full"
+            alt="hello  "
+          />
+        </div>
+      </Carousel>
     </div>
   );
-};
+}
 
 export default slider;

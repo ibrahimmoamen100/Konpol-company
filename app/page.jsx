@@ -1,10 +1,9 @@
-import { Inter } from "@next/font/google";
 import Image from "next/image";
-import Link from "next/link";
+import { Inter } from "@next/font/google";
 import logo from "../public/image/My project.png";
 import Countdown from "./componnets/countdown";
-import "./styles/globals.css";
 import styles from "./styles/page.module.css";
+import "./styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home(props) {
@@ -23,13 +22,13 @@ export default function Home(props) {
           Check More About Us by Download our Catalog in the button Down below
         </p>
         <button className="p-3 bg-blue-800 flex flex-col justify-center items-center text-white font-mono font-bold">
-          <Link
+          <a
             href="https://drive.google.com/file/d/1JQwy0tlURPNYMH7M5O2WTR1k0rdiUE0X/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >
             Download Catalog
-          </Link>
+          </a>
         </button>
       </div>
     </main>
