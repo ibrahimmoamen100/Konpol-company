@@ -1,8 +1,8 @@
 import Link from "next/link";
 import {
   AiFillFacebook,
-  AiFillTwitterSquare,
   AiFillLinkedin,
+  AiFillTwitterSquare,
   AiTwotonePhone,
 } from "react-icons/ai";
 
@@ -18,22 +18,16 @@ function topnavbar() {
         <ul className="flex flex-row gap-2 w-full justify-end">
           <li className="flex justify-center items-center">
             <Link href="">
-              <AiFillFacebook className="text-2xl text-[#00154e]  hover:text-blue-700" />
+              <AiFillFacebook className="text-2xl text-main  hover:text-blue-700" />
             </Link>
           </li>
           <li>
-            <Link
-              href=""
-              className="text-2xl text-[#00154e]  hover:text-blue-700"
-            >
+            <Link href="" className="text-2xl text-main  hover:text-blue-700">
               <AiFillTwitterSquare />
             </Link>
           </li>
           <li className="">
-            <Link
-              href=""
-              className="text-2xl text-[#00154e]  hover:text-blue-700"
-            >
+            <Link href="" className="text-2xl text-main  hover:text-blue-700">
               <AiFillLinkedin />
             </Link>
           </li>

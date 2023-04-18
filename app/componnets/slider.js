@@ -1,9 +1,11 @@
-import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import bg1 from "../../public/image/slider 4.jpeg";
-import bg2 from "../../public/image/slider 4.jpeg";
+import "react-multi-carousel/lib/styles.css";
 import bg3 from "../../public/image/slider 2.jpeg";
-import bg4 from "../../public/image/slider 4.jpeg";
+import {
+  default as bg1,
+  default as bg2,
+  default as bg4,
+} from "../../public/image/slider 4.jpeg";
 
 import Image from "next/image";
 function slider(props) {
