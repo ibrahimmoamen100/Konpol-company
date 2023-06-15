@@ -11,7 +11,7 @@ export default function Countdown() {
   });
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date("May 20, 2023 23:59:59").getTime();
+    const eventDate = new Date("Jul 20, 2023 23:59:59").getTime();
     const now = new Date().getTime();
     const difference = eventDate - now;
 
