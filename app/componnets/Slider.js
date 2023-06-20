@@ -8,7 +8,7 @@ import {
 } from "../../public/image/slider 4.jpeg";
 
 import Image from "next/image";
-function slider(props) {
+function Slider(props) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -123,4 +123,4 @@ function slider(props) {
   );
 }
 
-export default slider;
+export default Slider;

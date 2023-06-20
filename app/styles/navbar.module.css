@@ -1,4 +1,4 @@
-.entire_navbar {
+/* .entire_navbar {
   background-color: #eee;
   padding: 0em;
   margin: 0;
@@ -6,7 +6,6 @@
 
 .navbar_container {
   max-width: 1200px;
-  /* background-color: red; */
   margin: auto;
 }
 
@@ -16,7 +15,6 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  /* background-color: red; */
 }
 
 .logo {
@@ -28,7 +26,6 @@
   align-items: center;
   gap: 1em;
   list-style: none;
-  /* background-color: blue; */
   height: 100%;
   flex: 1;
 }
@@ -40,4 +37,4 @@
   text-decoration: none;
   color: black;
   padding: 1em;
-}
+} */

@@ -1,6 +1,6 @@
 import Script from "next/script";
 import styles from "../styles/page.module.css";
-export default function countdown() {
+export default function Countdown() {
   return (
     <div className={styles.countdown_container}>
       <div className={styles.days_section}>

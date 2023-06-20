@@ -19,6 +19,7 @@ module.exports = {
       righteous: ["Righteous", "sans-serif"],
       vidaloka: ["Vidaloka", "sans-serif"],
       orbitron: ["Orbitron", "sans-serif"],
+      oswald: ["Oswald", 'sans-serif']
     },
     extend: {
       colors: {

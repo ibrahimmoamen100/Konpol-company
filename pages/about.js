@@ -1,9 +1,11 @@
+import Slider from "app/componnets/Slider";
+import Topnavbar from "app/componnets/Topnavbar";
 import Head from "next/head";
 import Navbar from "../app/componnets/Navbar";
-import Topnavbar from "app/componnets/topnavbar";
 import "../app/styles/globals.css";
-import Slider from "app/componnets/slider";
-export default function about() {
+
+
+export default function About() {
   return (
     <div>
       <Head>
@@ -13,7 +15,6 @@ export default function about() {
       <Navbar />
       {/* <Slider /> */}
       <div className="container">
-        <h1 className="text-6xl">hello from asdasdad</h1>
       </div>
     </div>
   );
