@@ -27,7 +27,10 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.2",
+<<<<<<< HEAD
     "react-redux": "^8.1.0",
+=======
+>>>>>>> 93ccb0be0060c7cc267c2a36904d7b1b60f44483
     "vercel": "^30.2.2"
   },
   "devDependencies": {

@@ -8,7 +8,11 @@ import {
 
 function Topnavbar() {
   return (
+<<<<<<< HEAD:app/componnets/Topnavbar.js
     <div className="bg-secondMain">
+=======
+    <div className="bg-main">
+>>>>>>> 93ccb0be0060c7cc267c2a36904d7b1b60f44483:app/componnets/topnavbar.js
       <div className="container mx-auto flex flex-auto">
         {/* Phone Icon and label */}
         <div className="flex flex-row justify-center items-center text-[#00154e] hover:text-blue-700 cursor-pointer">
