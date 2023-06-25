@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BiDownArrowAlt, BiSearch } from "react-icons/bi";
-import { useMeasure } from "react-use";
 import {
   datasheets,
   markets,
@@ -19,13 +18,10 @@ export default function BottomNavbar() {
       prevDropdown === dropdownName ? null : dropdownName
     );
   };
-  const [ref, bounds] = useMeasure();
+
   return (
-    <div
-      className="bg-white w-100  z-10 border-2 border-gray-200 relative hidden lg:block"
-      ref={ref}
-    >
-      <div className="mx-auto container flex justify-between">
+    <div className="bg-white w-100  border-2 border-gray-200 relative">
+      <div className="container m-auto flex justify-between">
         <ul className="flex gap-4">
           <li
             onClick={() => handleToggle("material")}
@@ -71,7 +67,7 @@ export default function BottomNavbar() {
             className="p-2 text-gray-600  flex justify-center items-center gap-1 font-medium  font-righteous cursor-pointer"
           >
             {" "}
-            Events <BiDownArrowAlt />{" "}
+            New & Events <BiDownArrowAlt />{" "}
             {openDropdown === "events" && <DropDown data={resources} />}
           </li>
           <li className="p-2 text-gray-600  flex justify-center items-center gap-1 font-medium  font-righteous cursor-pointer">
@@ -79,13 +75,13 @@ export default function BottomNavbar() {
             About Us <BiDownArrowAlt />{" "}
           </li>
         </ul>
-        <button className="hidden lg:flex border-2 justify-center  items-center gap-2  px-2  ">
+        <button className="flex justify-center items-center gap-2   px-2 input ">
+          Search
           <BiSearch className="text-lg" />
-          {bounds.width >= 1500 ? "Search Bar" : "Search"}
           <input
             type="text"
-            placeholder={bounds.width >= 1500 ? "Type here" : ""}
-            className="hidden py-0.5 border-none outline-none xl:flex"
+            placeholder="Type here"
+            className="input input-bordered w-full max-w-xs"
           />
         </button>
       </div>

@@ -45,10 +45,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-.react-multi-carousel-list {
-  z-index: 5;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
