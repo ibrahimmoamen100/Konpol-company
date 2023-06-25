@@ -2,6 +2,7 @@
 import BottomNavbar from "app/componnets/BottomNavbar";
 import Cards from "app/componnets/Card";
 import Footer from "app/componnets/Footer";
+import MapLocation from "app/componnets/MapLocation";
 import Navbar from "app/componnets/Navbar";
 import Pricing from "app/componnets/Pricing";
 import Slider from "app/componnets/Slider";
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing />
       <Stats />
       <Cards />
+      <MapLocation/>
       <Footer />
     </div>
   );

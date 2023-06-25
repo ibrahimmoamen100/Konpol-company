@@ -2,7 +2,6 @@ import { animated, useSpring } from "@react-spring/web";
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
