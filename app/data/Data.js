@@ -2,6 +2,12 @@ export let materials = [
   { id: 1, name: "my name", link: "/home" },
   { id: 2, name: "my about", link: "/about" },
   { id: 3, name: "my contact", link: "/contact" },
+  { id: 4, name: "my name", link: "/home" },
+  { id: 5, name: "my about", link: "/about" },
+  { id: 6, name: "my contact", link: "/contact" },
+  { id: 7, name: "my name", link: "/home" },
+  { id: 8, name: "my about", link: "/about" },
+  { id: 9, name: "my contact", link: "/contact" },
 ];
 
 
@@ -9,6 +15,9 @@ export let products = [
   { id: 1, name: "mY Product", link: "/home" },
   { id: 2, name: "my product 2", link: "/about" },
   { id: 3, name: "my product 3", link: "/contact" },
+  { id: 4, name: "mY Product", link: "/home" },
+  { id: 5, name: "my product 2", link: "/about" },
+  { id: 6, name: "my product 3", link: "/contact" },
 ];
 
 
@@ -16,6 +25,12 @@ export let markets = [
   { id: 1, name: "my market 1 ", link: "/home" },
   { id: 2, name: "my market 2", link: "/about" },
   { id: 3, name: "my market 3", link: "/contact" },
+  { id: 4, name: "my market 1 ", link: "/home" },
+  { id: 5, name: "my market 2", link: "/about" },
+  { id: 6, name: "my market 3", link: "/contact" },
+  { id: 7, name: "my market 2", link: "/about" },
+  { id: 8, name: "my market 3", link: "/contact" },
+
 ];
 
 export let datasheets = [

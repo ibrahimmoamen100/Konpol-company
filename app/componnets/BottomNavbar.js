@@ -1,5 +1,7 @@
+import { animated, useSpring } from "@react-spring/web";
 import React, { useEffect, useState } from "react";
 import { BiDownArrowAlt, BiSearch } from "react-icons/bi";
+
 import {
   datasheets,
   markets,

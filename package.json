@@ -17,20 +17,19 @@
     "@mui/material": "^5.11.12",
     "@next/font": "13.1.2",
     "@react-icons/all-files": "^4.1.0",
+    "@react-spring/web": "^9.7.2",
     "@reduxjs/toolkit": "^1.9.5",
     "daisyui": "^2.51.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
+    "google-map-react": "^2.2.1",
     "keen-slider": "^6.8.5",
     "next": "^13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.2",
-<<<<<<< HEAD
     "react-redux": "^8.1.0",
-=======
->>>>>>> 93ccb0be0060c7cc267c2a36904d7b1b60f44483
     "vercel": "^30.2.2"
   },
   "devDependencies": {
