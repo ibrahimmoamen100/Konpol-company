@@ -23,7 +23,7 @@ export default function Home(props) {
         />
       </div>
 
-      <div className={styles.entire_container} stat place-items-center>
+      <div className={styles.entire_container} >
         <h1 className="sm:text-lg bg-white text-main p-5 text-center font-righteous font-bold text-xs stat place-items-center rounded-xl">
           WELCOME TO KONPOL COMPANY
         </h1>
@@ -36,7 +36,7 @@ export default function Home(props) {
         </p>
         <div className="flex sm:flex-auto justify-around items-center gap-1 ">
           <Link
-            href="https://drive.google.com/file/d/1JQwy0tlURPNYMH7M5O2WTR1k0rdiUE0X/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JQwy0tlURPNYMH7M5O2WTR1k0rdiUE0X/view?usp=sharing" passHref
             rel="noreferrer"
             target="_blank"
           >
@@ -44,7 +44,7 @@ export default function Home(props) {
               DOWNLOAD CATALOGE <BsDownload className="mx-2 text-lg" />
             </button>
           </Link>
-          <Link legacyBehavior href="/home" rel="noreferrer" target="_blank">
+          <Link legacyBehavior href="/home" rel="noreferrer" passHref target="_blank">
             <button className="p-3 bg-main transition duration-200 hover:bg-blue-700  flex flex-1 flex-row justify-center items-center text-white font-righteous rounded-xl ">
               HOME PAGE <BsHouseDoor className="mx-2 text-lg" />
             </button>
