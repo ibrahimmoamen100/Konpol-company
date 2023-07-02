@@ -22,21 +22,20 @@ export default function DropDown2({ open }) {
     };
   });
   const navbarSpring = useSpring({
-    position: isFixed ? "fixed" : "relative",
-    top: isFixed ? 85 : 0,
+    position: open ? "fixed" : "absolute",
+    top: open ? 85 : 120,
     config: { mass: 5, tension: 500, friction: 80 },
+    opacity:open? 1: 0,
   });
 
-  const dropDown = useSpring({
-    top: open ? 100 : 0,
-  });
+
   return (
     <animated.div
       style={navbarSpring}
       className={
         open
-          ? "bg-white w-full  border-2 border-gray-200  z-50  left-0 flex lg:hidden"
-          : "bg-white w-full  border-2 border-gray-200  z-50 top-100 left-0 hidden"
+          ? "bg-white w-full  border-2 border-gray-200 h-full z-50  left-0 flex lg:hidden"
+          : "bg-white w-full  border-2 border-gray-200 h-full z-50 top-100 left-0 hidden"
       }
     >
       <div className="container m-auto flex justify-between">
