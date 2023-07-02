@@ -30,9 +30,9 @@ const DropDown = ({ data }) => {
               key={Math.random()}
               className="p-2 border-b-2 border-gray-200 basis-1/5 flex justify-between items-center"
               href={e.link}
+              replace
             >
               {e.name}
-              <BsArrowUpRightCircle />
             </Link>
           ))}
         </ul>

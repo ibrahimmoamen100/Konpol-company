@@ -1,3 +1,5 @@
+import BottomNavbar from "app/componnets/BottomNavbar";
+import Footer from "app/componnets/Footer";
 import Slider from "app/componnets/Slider";
 import Topnavbar from "app/componnets/Topnavbar";
 import Head from "next/head";
@@ -13,9 +15,13 @@ export default function About() {
       </Head>
       <Topnavbar />
       <Navbar />
+      <BottomNavbar/>
       {/* <Slider /> */}
       <div className="container">
+      
+      <h1>this About</h1>
       </div>
+      <Footer/>
     </div>
   );
 }
