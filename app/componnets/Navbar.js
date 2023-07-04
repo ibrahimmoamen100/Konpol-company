@@ -1,3 +1,4 @@
+'use client'
 import { animated, useSpring } from "@react-spring/web";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
 
-import { useMeasure } from "react-use";
+import { useMeasure } from "@uidotdev/usehooks";
 import logo from "../../public/image/konpol transparent logo.png";
 import SmallDrop from "./SmallDrop";
 

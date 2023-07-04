@@ -20,6 +20,7 @@
     "@react-icons/all-files": "^4.1.0",
     "@react-spring/web": "^9.7.2",
     "@reduxjs/toolkit": "^1.9.5",
+    "@uidotdev/usehooks": "^2.0.1",
     "daisyui": "^2.51.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
