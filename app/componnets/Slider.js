@@ -1,6 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import bg3 from "../../public/image/slider 2.jpeg";
+import "../styles/globals.css";
+
 import {
   default as bg1,
   default as bg2,
@@ -27,7 +29,7 @@ function Slider(props) {
     },
   };
   return (
-    <div className="bg-slate-500 h-2/6">
+    <div className="bg-slate-500 h-2/6 z-5">
       <Carousel
         className="m-auto "
         additionalTransfrom={0}
@@ -83,12 +85,8 @@ function Slider(props) {
             className="block object-cover h-full w-screen pointer-events-none "
             alt="hello  "
           />
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Bulding for today with an eye on tomorrow
-          </h1>
-          <button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            Read More
-          </button>
+
+
         </div>
         <div className="w-{100} h-{100} bg-red-300 flex object-cover pointer-events-none">
           <Image
@@ -97,13 +95,7 @@ function Slider(props) {
             alt="hello  "
           />
         </div>
-        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
-          <Image
-            src={bg3}
-            className="block object-cover max-w-full w-full h-full"
-            alt="hello  "
-          />
-        </div>
+
         <div className="w-{100} h-{100} bg-red-300 flex object-cover">
           <Image
             src={bg2}
@@ -111,13 +103,7 @@ function Slider(props) {
             alt="hello  "
           />
         </div>
-        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
-          <Image
-            src={bg1}
-            className="block object-cover max-w-full w-full h-full"
-            alt="hello  "
-          />
-        </div>
+
       </Carousel>
     </div>
   );

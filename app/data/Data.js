@@ -2,6 +2,15 @@ export let materials = [
   { id: 1, name: "my name", link: "/home" },
   { id: 2, name: "my about", link: "/about" },
   { id: 3, name: "my contact", link: "/contact" },
+  { id: 4, name: "my name", link: "/home" },
+  { id: 5, name: "my about", link: "/about" },
+  { id: 6, name: "my contact", link: "/contact" },
+  { id: 7, name: "my name", link: "/home" },
+  { id: 8, name: "my about", link: "/about" },
+  { id: 9, name: "my contact", link: "/contact" },
+  { id: 10, name: "my name", link: "/home" },
+  { id: 11, name: "my about", link: "/about" },
+  { id: 12, name: "my contact", link: "/contact" },
 ];
 
 
