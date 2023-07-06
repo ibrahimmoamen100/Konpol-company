@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef, useState } from "react";
 import { BiDownArrowAlt, BiSearch } from "react-icons/bi";
 import { useMeasure } from "react-use";

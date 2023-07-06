@@ -15,13 +15,7 @@ const DropDown = ({ data }) => {
       className="z-9 bg-white w-screen absolute flex flex-wrap flex-col justify-center items-start top-10 left-0 border-t-2 border-gray-200"
     >
       <div className="container m-auto">
-        <Link
-          href="/products"
-          className="font-medium text-secondMain flex p-2  border-b-2 border-gray-200"
-        >
-          {" "}
-          See All Products
-        </Link>
+
 
         <ul className="flex justify-start gap-x-16 flex-row h-auto pt-2 flex-wrap ">
           {data.map((e) => (

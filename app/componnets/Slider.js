@@ -1,3 +1,4 @@
+import { CldImage } from "next-cloudinary";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import bg3 from "../../public/image/slider 2.jpeg";
@@ -50,7 +51,7 @@ function Slider(props) {
         responsive={{
           desktop: {
             breakpoint: {
-              max: 3000,
+              max: 2000,
               min: 1024,
             },
             items: 1,
@@ -80,30 +81,41 @@ function Slider(props) {
         swipeable
       >
         <div className="w-screen bg-red-300 flex-row object-cover ">
-          <Image
-            src={bg1}
-            className="block object-cover h-full w-screen pointer-events-none "
-            alt="hello  "
+          <CldImage
+            width="3000"
+            height="900"
+            gravity="center"
+            crop="fill"
+            src="v1688261354/slider_4_dficvu.jpg"
+            sizes="100vw"
+            alt="Description of my image"
+
           />
-
-
         </div>
         <div className="w-{100} h-{100} bg-red-300 flex object-cover pointer-events-none">
-          <Image
-            src={bg4}
-            className="block object-cover max-w-full w-full h-full"
-            alt="hello  "
+          <CldImage
+            width="3000"
+            height="900"
+            gravity="center"
+            crop="fill"
+            src="v1688261354/slider_2_ny6eo5.jpg"
+            sizes="100vw"
+            alt="Description of my image"
           />
         </div>
 
         <div className="w-{100} h-{100} bg-red-300 flex object-cover">
-          <Image
-            src={bg2}
-            className="block object-cover max-w-full w-full h-full"
-            alt="hello  "
+          <CldImage
+            width="3000"
+            height="900"
+            gravity="center"
+            crop="fill"
+            src="v1688261354/slider_3_rrgdtd.jpg"
+            sizes="100vw"
+            alt="Description of my image"
+            zoom="0"
           />
         </div>
-
       </Carousel>
     </div>
   );

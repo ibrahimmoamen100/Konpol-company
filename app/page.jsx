@@ -1,5 +1,7 @@
 
+'use client';
 import { Inter } from "@next/font/google";
+import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import Link from "next/link";
 import { BsDownload, BsHouseDoor, BsTools } from "react-icons/bs";
@@ -8,20 +10,13 @@ import { FcDownload } from "react-icons/fc";
 import logo from "../public/image/konpol transparent logo.png";
 import Countdown from "./componnets/CounterDown";
 
-import "./styles/globals.css";
 import styles from "./styles/page.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home(props) {
   return (
     <main className={styles.main}>
-      <div className="bg-white flex justify-center items-center rounded-xl ">
-        <Image
-          src={logo}
-          alt="logo company"
-          className="object-cover w-2/12 sm:inset-64 bg-red"
-        />
-      </div>
+
 
       <div className={styles.entire_container} stat place-items-center>
         <h1 className="sm:text-lg bg-white text-main p-5 text-center font-righteous font-bold text-xs stat place-items-center rounded-xl">

@@ -1,5 +1,6 @@
-'use client'
+"use client";
 import { animated, useSpring } from "@react-spring/web";
+import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,7 +36,15 @@ function Navbar(props) {
       <div className=" navbar bg-base-100 container m-auto w-full">
         <div className="flex mr-5">
           <Link href="home">
-            <Image src={logo} alt="this logo image" className="w-16 lg:w-28" />
+            <CldImage
+              width="120"
+              height="120"
+              border="2px_solid_darkblue"
+
+              src="v1688261356/konpol_transparent_logo_lyk9ay.png"
+              sizes="100vw"
+              alt="Description of my image"
+            />{" "}
           </Link>
         </div>
         {/* This Humberger Menu  */}

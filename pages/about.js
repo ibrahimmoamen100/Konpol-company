@@ -1,4 +1,5 @@
 import Blog from "app/componnets/Blog";
+import MapLocation from "app/componnets/MapLocation";
 import Slider from "app/componnets/Slider";
 import Topnavbar from "app/componnets/Topnavbar";
 import Head from "next/head";
@@ -15,9 +16,10 @@ export default function About({posts}) {
       <Topnavbar />
       <Navbar />
       {/* <Slider /> */}
-      <Blog posts={posts}/>
+      {/* <Blog posts={posts}/> */}
       <div className="container">
       </div>
+      {/* <MapLocation/> */}
     </div>
   );
 }
