@@ -80,7 +80,7 @@ function Slider(props) {
         slidesToSlide={1}
         swipeable
       >
-        <div className="w-screen bg-red-300 flex-row object-cover ">
+        <div className="w-screen bg-red-300 flex-row object-cover pointer-events-none">
           <CldImage
             width="3000"
             height="900"
@@ -104,7 +104,7 @@ function Slider(props) {
           />
         </div>
 
-        <div className="w-{100} h-{100} bg-red-300 flex object-cover">
+        <div className="w-{100} h-{100} bg-red-300 flex object-cover pointer-events-none">
           <CldImage
             width="3000"
             height="900"
